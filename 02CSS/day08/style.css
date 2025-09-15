@@ -1,0 +1,28 @@
+h1{
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    border: 2px solid green;
+    /* when word is connected with the border line then we use padding to give some space according to your insert px
+     */
+    padding: 10px; 
+    margin :10px;
+    /* border radius ham tab use jab box pe thora sa curve bnana ho */
+    border-radius: 10px;
+}
+h2{
+    background-color: green;
+    border: 5px solid red;
+    padding: 10px;
+    /* margin is used to give space from the outside  */
+    /* margin 10px means it will get space from all 4 direction of 10px */
+    margin: 10px;    
+}
+p{
+    background-color: pink;
+    border: 5px solid rebeccapurple;
+    padding: 10px;
+    margin: 10px;
+    border-top: 10px solid red;
+
+}

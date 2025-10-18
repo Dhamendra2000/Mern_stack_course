@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <style>
+        .first{
+            height: 200px;
+            width: 300px;
+            margin: auto;
+            background-color: green;
+            border: 2px red solid; 
+        }
+
+    </style>
+</head>
+<body>
+   <div class="first">
+     <h2>Guess the number 1 to 10</h2>
+    <input type="number" id="guess" placeholder="enter your guess">
+    <button onclick="checkGuess()">Click</button>
+    <p id="result"></p>
+   </div>
+
+    <script>
+        let randomNumber = Math.floor(Math.random() * 10) + 1;
+
+        function checkGuess() {
+            let userGuess = document.getElementById("guess").value;
+
+            if (userGuess == randomNumber) {
+                document.getElementById("result").innerText = "🎉 Correct! You guessed it!";
+            } else {
+                document.getElementById("result").innerText = "❌ Wrong! Try again.";
+            }
+        }
+    </script>
+</body>
+</html>
